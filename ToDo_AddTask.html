@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Add Task</title>
+    <link rel="stylesheet" type="text/css" href="ToDo.css">
+</head>
+<body>
+	<div id="header"> 
+    	<div id="heading">
+        	<a href="index.html">ToDo</a>
+        </div>
+        <div id="switch">
+        	<a href="index.html"> Home</a>
+        </div>
+    </div>
+    <div id="main">
+    	<form id="form" action="index.html">
+        <div id="formGroups">
+        	<label for="task"> Task:</label>
+        	<input type="text" id="task" name="task" placeholder="Add your task here" autofocus required>
+        </div>    
+       	<div id="formGroups">
+        	<label for="priority"> Priority:</label>
+        	<select id="priority">
+            	<option>Low</option>
+                <option selected>Medium</option>
+                <option>High</option>
+            </select>
+        </div>
+        <div id="formGroups">
+        	<label for="date"> Date:</label>
+        	<input type="date" name="date" id="date">
+        </div>
+        <div id="formGroups">
+        	<label for="time"> Time:</label>
+        	<input type="time" name="time" id="time">
+        </div>
+         <div id="formGroups">
+        	<label for="submit"> Submit:</label>
+        	<input type="submit" id="submit" name="task" >
+        </div>
+        </form>
+    </div>
+    <script src='ToDo_AddTask.js'></script>
+</body>
+</html>
